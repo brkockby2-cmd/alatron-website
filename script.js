@@ -113,7 +113,7 @@ if (contactForm) {
         }
 
         // Formu gönder (Formspree)
-        fetch('https://formspree.io/f/mgodypla', {
+        fetch('https://formspree.io/f/mrejkooy', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -305,5 +305,5 @@ function smoothScrollToElement(selector) {
 /* ═══════════════════════════════════════════════════════════════════════ */
 
 console.log('=== JAVASCRIPT YÜKLEMESI TAMAMLANDI ===');
-console.log('Formspree Form ID: mgodypla');
-console.log('Email: brkockby3@gmail.com');
+console.log('Formspree Form ID: mrejkooy');
+console.log('Email: alatron@outlook.com.tr');
