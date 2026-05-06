@@ -113,7 +113,7 @@ if (contactForm) {
         }
 
         // Formu gönder (Formspree)
-        fetch('https://formspree.io/f/xyzabc123', {
+        fetch('https://formspree.io/f/mgodypla', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -158,8 +158,10 @@ function showSuccessMessage() {
     successDiv.innerHTML = `
         <div class="success-content">
             <i class="fas fa-check-circle"></i>
-            <h3>Başarılı!</h3>
-            <p>Mesajınız başarıyla gönderildi. En kısa zamanda sizinle iletişime geçeceğiz.</p>
+            <div>
+                <h3>Başarılı!</h3>
+                <p>Mesajınız başarıyla gönderildi. En kısa zamanda sizinle iletişime geçeceğiz.</p>
+            </div>
         </div>
     `;
 
@@ -181,14 +183,14 @@ function showSuccessMessage() {
 
 // Footer yasal linkleri güncelle
 const legalLinks = {
-    'Gizlilik Politikası': '/privacy.html',
-    'Kullanım Şartları': '/terms.html',
-    'Çerez Politikası': '/cookies.html',
+    'Gizlilik Politikası': '#iletisim',
+    'Kullanım Şartları': '#iletisim',
+    'Çerez Politikası': '#iletisim',
     'İletişim': '#iletisim',
-    'Harita': '/sitemap.html'
+    'Harita': '#iletisim'
 };
 
-// Footer linklerini güncelle (opsiyonel)
+// Footer linklerini güncelle
 const footerLinks = document.querySelectorAll('.footer-links a');
 footerLinks.forEach(link => {
     const linkText = link.textContent.trim();
@@ -303,3 +305,5 @@ function smoothScrollToElement(selector) {
 /* ═══════════════════════════════════════════════════════════════════════ */
 
 console.log('=== JAVASCRIPT YÜKLEMESI TAMAMLANDI ===');
+console.log('Formspree Form ID: mgodypla');
+console.log('Email: brkockby3@gmail.com');
